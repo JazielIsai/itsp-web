@@ -1,0 +1,41 @@
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    
+    
+    @include tablet{
+        flex-direction: column;
+        padding-top: 0.5rem;
+        
+    }
+}
+
+.navegacion {
+
+    display: flex;
+    align-items: center;
+
+
+    a {
+        text-decoration: none;
+        color: $azulfuerte;
+        font-size: 2rem;
+        margin-right: 2rem;
+
+        &:last-of-type { /*Seleciona el ultimo elemento y lo que vamos a hacer es eliminar el margin al ultimo elemento*/
+            margin-right: 0;
+        }
+
+        @include tablet{
+            display: block;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    @include tablet{
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+.no-webp .header-inicio-principal{
+    background-image: url(../img/portadawebitsp.png);
+}
+.webp .header-inicio-principal {
+    background-image: url(../img/portadawebitsp.webp);
+}
+.header {
+    background-color: $gris;
+    padding: 1rem 0 3rem 0;
+
+    &.header-inicio-principal {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+
+
+        .contenido-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            
+            h1{
+                text-align:left;
+                color: $azulfuerte;
+                font-weight: $bold;
+                line-height: 1.5;
+                max-width: 55rem;
+            }
+        }
+    }
+    
+    
+    img{
+        width: 64px;
+        height: 64px;
+    }
+
+    
+}
