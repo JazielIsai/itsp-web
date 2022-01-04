@@ -1,0 +1,57 @@
+
+.main {
+    h1{
+        font-weight: $regular;
+    }
+}
+
+.text-about-us {
+    @include grid(2, 4rem);
+    padding: 0 1rem 3rem 1rem;
+    font-weight: $delgada;
+    text-align: justify;
+
+    h3{
+        color: $azulfuerte;
+        font-weight: $regular;
+        text-transform: uppercase;
+    }
+
+    @include tablet {
+        @include grid (1, 1rem);
+        padding: 0 3rem 2rem 3rem;
+    }
+}
+
+.iconos-nosotros {
+    
+    @include grid(3, 2);
+    place-content: center;
+    
+    text-align:center;
+    
+    @include tablet{
+       @include grid(1, 2);
+    }
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    width: 100%;
+
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+    h3{
+        color: $azulfuerte;
+        font-weight: $regular;
+        text-transform: uppercase;
+    }
+    p{
+        font-weight: $delgada;
+    }
+}

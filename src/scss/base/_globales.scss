@@ -15,6 +15,10 @@ body{
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
+
+    &.figar-body{
+        overflow: hidden;
+    }
 }
 
 p{

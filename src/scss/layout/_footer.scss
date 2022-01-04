@@ -4,13 +4,58 @@
     background-color: $grisOscuro;
     margin: 0;
     
-    .contenido-footer{
-        padding-top: calc($separacion / 2);
-        nav a{
-            color: $azulClaro;
+    .footer-container {
+        @include grid(2,3);
+        place-content: center; 
+        place-items: center;
 
+        .contenido-footer{
+            padding-top: calc($separacion / 2);
+            nav a{
+                color: $azulClaro;
+    
+            }
+        }
+
+        .redes-sociales-footer{ 
+
+            .footer-rs-iconos{
+                @include grid(4, 1rem);
+                text-align: center;
+
+                @include tablet {
+                    @include grid(2, 1rem);
+                }
+            }   
+
+            h3{
+                color: $blanco;
+                font-weight: $regular;
+            }
+
+            a{
+                color: $azulClaro;
+
+                .fa-youtube{
+                    color: #c4302b;
+                }
+                .fa-google-drive{
+                    color: rgb(251, 255, 0);
+                }
+                .fa-facebook-square {
+                    color: #3b5998;
+                }
+            }
+
+            a i{
+                color: $azulClaro;
+                font-size: 3.5rem;
+                
+            }
         }
     }
+
+
 
     .copyright {
         color: $blanco;
