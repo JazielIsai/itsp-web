@@ -1,0 +1,44 @@
+
+
+h1{
+    font-weight: $black;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.contenido-itsp, .contenido-ifm, .contenido-lo-que-creemos {
+    @include grid(10, 4rem);
+    place-content: center;
+
+    blockquote{
+        font-weight: $bold;
+        color: $azulfuerte;
+        font-size: 3rem;
+    }
+
+    @include tabletpro {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.nosotros-img {
+    grid-column: 1 / 4;
+}
+
+.nosotros-text{
+    grid-column: 4 / 11;
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.contenido-lo-que-creemos {
+    p{
+        font-size: 2.2rem;
+    }
+    ol li{
+        font-size: 2rem;
+
+    }
+}

@@ -1,0 +1,128 @@
+.present{
+    text-align: justify;
+    padding: 3.5rem 0rem 4rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    place-content: center;
+    gap: 2rem;
+    
+
+    .present-testimonial {
+        flex-grow: 1;
+        flex-basis: 200px;
+
+        width: 190px;
+        height: 450px;
+        
+        background-color: $azulClaro;
+        border-radius: 10%;
+        box-shadow:  13px 13px 38px #1e1e1e,
+                    -13px -13px 38px #242424;
+
+        
+        img {
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            padding: 2rem 2rem 0 3rem; 
+        
+        }
+        p{
+            font-size: 1.25rem;
+            line-height: 2;
+            padding: 0 3rem;
+            margin-bottom: 0;
+            margin-top: 0;
+            
+        }
+        .testimonial-author{
+            text-align: right;
+            padding: 0 4rem 0 0;
+            margin-top: 1rem;
+            font-family: cursive;
+        }
+
+    }
+
+    .present-about {
+        flex-grow: 2;
+        flex-basis: 500px;
+
+        h2{
+            font-weight: $bold;
+            margin: 0;         
+            color: $azulfuerte;   
+        }
+        p {
+            padding: 1rem 3rem 0 3rem;
+            margin: 0;
+            font-size: 2.8rem;
+
+        }
+        ul {
+            padding: 0.5rem 5rem 0 4rem;
+            margin: 0;
+            margin-left: 3rem;
+            li{
+                list-style: '✅';
+                padding-left: 1rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+    
+        .present-testimonial {
+            flex-grow: 1;
+            flex-basis: 170px;
+    
+            width: 170px;
+            height: 450px;
+    
+            
+            p{
+                font-size: 1.2rem;
+            }
+    
+    
+        }
+    
+    }
+    
+    @include tabletpro {
+        .present-testimonial {
+            img {
+                width: 80px;
+                height: 40px;
+                margin: 0;
+                margin-top: 1rem;
+                padding: 0 2rem 0 3rem; 
+            
+            }
+            p{
+                padding-top: 0;
+                margin-top: 0;
+                font-size: 0.99rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include telefono {
+        .present-testimonial {
+            img {
+                width: 90px;
+                height: 50px;
+            }
+            p{
+                padding-top: 0;
+                margin-top: 0;
+                font-size: 1.25rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
