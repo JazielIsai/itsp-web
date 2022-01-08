@@ -39,7 +39,75 @@
     </header>
 
     <main class="contenedor seccion">
-        <h1>Contacto</h1>
+        <h1> Inscribete </h1>
+
+        <picture>
+            <source srcset="build/img/portada-itsp.webp" type="image/webp">
+            <source srcset="build/img/portada-itsp.png" type="image/png">
+
+            <img loading="lazy" src="build/img/portada-itsp.png" alt="Imagen Inscripcion para el instituto">
+        </picture>
+
+        <h2>Llene el formulario:</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend> Información Personal </legend>
+
+                <label for="firstname">Nombre: </label>
+                <input type="text" class="firstname" id="firstname" name="firstname" placeholder="Ejemplo: Isaí">
+                
+                <label for="lastname">Apellidos: </label>
+                <input type="text" class="lastname" id="lastname" name="lastname" placeholder="Ejemplo: Hernández Ramirez">
+
+                <label for="yearold"> Edad: </label>
+                <input type="number" class="yearold" id="yearold" name="yearold" placeholder="Ejemplo: 33">
+
+                <label for="email">Email:</label>
+                <input type="email" class="email" id="email" name="email" placeholder="Ejemplo: ejemplo@gmail.com">
+
+                <label for="phone">N Celular:</label>
+                <input type="tel" class="phone" id="phone" name="phone" placeholder="Ejemplo: 5444324123">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de la iglesia a la que asistes: </legend>
+
+                <label for="namechurch">Nombre de la iglesia: </label>
+                <input type="text" class="namechurch" id="namechurch" name="namechurch" placeholder="Ejemplo: Monte Sinai">
+                
+                <label for="nameminister">Nombre del Pastor:</label>
+                <input list="namePastor" class="nameminister" id="nameminister" name="nameminister" placeholder="--Selecione--">
+                <datalist id="namePastor">
+                    <option value="Humberto Vallecillo"></option>
+                    <option value="Mario Ayala"></option>
+                    <option value="Roberto Barbosa"></option>
+                    <option value="Carlos Sánchez"></option>
+                    <option value="Israel Granados"></option>
+                    <option value="Gerardo Elizarraraz"></option>
+                    <option value="Fransisco Lara"></option>
+                    <option value="Estanislao Solís"></option>
+                    <option value="Isaias Alonso"></option>
+                    <option value="José de Jesús"></option>
+                    <option value="Daniel Solís"></option>
+                    <option value="Emanuel Solís"></option>
+                    <option value="Jose Luis"></option>
+                    <option value="Jubenal Antonio"></option>
+                    <option value="Roman Romero"></option>
+                    <option value="Arturo Carrillo"></option>
+                    <option value="Hugo Armenta"></option>
+                    <option value="Alejandro Muñiz"></option>
+                    <option value="Fransisco Ballón"></option>
+                    <option value="Javier Barbosa"></option>
+                </datalist>
+
+                <label for="">  </label>
+
+            </fieldset>
+
+            <input type="submit" class="btn btn-form">
+
+        </form>
     </main>
 
     <footer class="footer seccion">
@@ -56,19 +124,19 @@
             <div class="contenedor redes-sociales-footer"> 
                 <h3>Redes Sociales</h3>
                 <div class="footer-rs-iconos">
-                    <a href="">
+                    <a href="https://www.youtube.com/channel/UCbKZX-W5uGQr4m22i-VayaQ" target="_blank">
                         <i class="fab fa-youtube"></i> <br>
                         YouTube
                     </a>
-                    <a href="">
+                    <a href="https://drive.google.com/drive/folders/162KYzQuPicjn4fAA7DzUeJx_jaQFf4aD?usp=sharing" target="_blank">
                         <i class="fab fa-google-drive"></i> <br>
                         Drive
                     </a>
-                    <a href="">
+                    <a href="https://www.facebook.com/Instituto-Teol%C3%B3gico-San-Pablo-Irapuato-Guanajuato-103883254464529" target="_blank">
                         <i class="fab fa-facebook-square"></i> <br>
                         Facebook
                     </a>
-                    <a href="">
+                    <a href="mailto:itspyifm@gmail.com" target="_blank">
                         <i class="fas fa-envelope-square"></i> <br>
                         Email
                     </a>

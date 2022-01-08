@@ -1,0 +1,14 @@
+.ubicacion {
+
+    h2{
+        font-weight: $bold;
+        color: $azulfuerte;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
