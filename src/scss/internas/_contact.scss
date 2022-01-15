@@ -1,0 +1,77 @@
+.title-form{
+    text-align: center;
+    color: $azulfuerte;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+.formulario  fieldset{
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 2rem;
+
+    legend{
+        font-size: 1.5rem;
+        color: $azulfuerte;   
+    }
+
+    label { 
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    input {
+        padding: 1.5rem;
+        width: 95%;
+        
+    }
+}
+
+.formulario input[type="submit"] {
+    
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: $azulClaro;
+    border-radius: 5px;
+    color: $azulfuerte;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    
+       
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color:$blanco;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+       
+    &:hover::before {
+        width: 100%;
+    }
+       
+    &:hover {
+        color: rgb(0, 0, 0);
+    }
+       
+    &:active:before {
+        background: $blanco;
+    }
+
+    &:active {
+        transform: scale(90%);
+    }
+}
+
